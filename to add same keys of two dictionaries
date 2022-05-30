@@ -1,0 +1,20 @@
+d1={}
+s1=int(input('enter the size :'))
+for i in range(0,s1):
+    x=input('enter key : ')
+    y=input('enter value : ')
+    d1[x]=y
+d2={}
+s2=int(input('enter the size :'))
+for i in range(0,s2):
+    x=input('enter key : ')
+    y=input('enter value : ')
+    d1[x]=y
+d3={}
+d3.update(d1)
+d3.update(d2)
+for i,j in d1.items():
+    for k,l in d2.items():
+        if i==k:
+            d3[i]=j+l
+print(d3)
