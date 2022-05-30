@@ -1,0 +1,14 @@
+l1=[]
+l2=[]
+s1=int(input('enter the size of 1st list : '))
+print('enter the elements of 1st list : ')
+for i in range (0,s1):
+    e1=int(input())
+    l1.append(e1)
+s2=int(input('enter the size of 2nd list : '))
+print('enter the elements of 2nd list : ')
+for i in range (0,s2):
+    e2=int(input())
+    l2.append(e2)
+d=dict(zip(l1,l2))
+print(d)
