@@ -1,0 +1,11 @@
+d={}
+s=int(input('enter the size :'))
+for i in range(0,s):
+    x=input('enter key : ')
+    y=input('enter value : ')
+    d[x]=y
+k=input('enter the key to be found  : ')
+if k in d.keys():
+    print(k,'=',d[k])
+else:
+    print(k,':- not found')
