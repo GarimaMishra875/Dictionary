@@ -1,0 +1,11 @@
+d1={}
+s1=int(input('enter the size :'))
+for i in range(0,s1):
+    x=input('enter key : ')
+    y=input('enter value : ')
+    d1[x]=y
+print(d1)
+if len(d1)==0:
+    print('empty dictionary')
+else:
+    print('not empty')
